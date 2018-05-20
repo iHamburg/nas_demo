@@ -24,7 +24,7 @@ handler.on('push', function (event) {
   var exec = require('child_process').exec;
 
     //当前pwd ： FZWebhookServer
-    var cmdStr = 'scripts/webhook.sh'
+    var cmdStr = '/root/nasProjs/nas_demo/webhookServer/scripts/webhook.sh'
 
     exec(cmdStr, function(err, stdout, stderr) {
       if (err) {
