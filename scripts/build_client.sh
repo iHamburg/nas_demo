@@ -6,7 +6,7 @@ git add -A
 git commit -a -m "update client"
 
 
-cd client
+cd ../client
 npm install
 npm run build
 
