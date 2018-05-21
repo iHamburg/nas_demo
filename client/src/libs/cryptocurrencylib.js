@@ -16,6 +16,8 @@ export default {
      */
   queryList(callback) {
     networklib.api_get('/cryptocurrencies').then(obj => {
+
+
       callback(null, obj.rows);
     })
             .catch(err => { callback(err) });

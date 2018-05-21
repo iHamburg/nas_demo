@@ -11,12 +11,13 @@ import Maps from "@/pages/Maps.vue";
 import Typography from "@/pages/Typography.vue";
 import TableList from "@/pages/TableList.vue";
 import CurrencyList from '@/pages/CurrencyList.vue';
+import SuperDict from '@/pages/SuperDict.vue';
 
 const routes = [
   {
     path: "/",
     component: DashboardLayout,
-    redirect: "/dashboard",
+    redirect: "/superdict",
     children: [
       {
         path: "dashboard",
@@ -57,6 +58,11 @@ const routes = [
         path: "currencies",
         name: "currencies",
         component: CurrencyList
+      },
+      {
+        path: "superdict",
+        name: "superdict",
+        component: SuperDict
       }
     ]
   },
